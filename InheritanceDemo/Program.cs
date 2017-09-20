@@ -15,6 +15,10 @@ namespace InheritanceDemo
             Console.WriteLine(sp1);
             Console.WriteLine(sp2);
 
+            Person[] p = new Person[3];
+            p[0] = new Teacher("dsdsd", "dsadasd");
+
+            Console.WriteLine(p[0]);
             object o1 = new Student("fdsgfd","safsag");
             Console.WriteLine(o1 is Student);
             Console.ReadLine();
@@ -64,8 +68,5 @@ namespace InheritanceDemo
             get { return nationalID; }
             //set { nationalID = value; }
         }
-
-
-
     }
 }
